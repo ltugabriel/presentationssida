@@ -1,97 +1,113 @@
-/* Allmänt dokumentinställning */
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  padding: 20px;
-  background-color: #f4f4f4;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
-/* Rubriker */
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 960px;
+}
+
 h1 {
-  color: #333;
-  text-align: center;
-  font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
 }
 
 h2 {
-  color: #555;
-  font-size: 1.8em;
-  margin-bottom: 10px;
+    color: #555;
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
-/* Stycke */
 p {
-  font-size: 1.2em;
-  color: #444;
-  margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 20px;
 }
 
-/* Länkar */
 a {
-  color: #007bff;
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-/* Bilder */
-img {
-  display: block;
-  margin: 20px auto;
-  border-radius: 50%;
-  border: 3px solid #ddd;
-}
-
-/* Tabeller */
 table {
-  width: 100%;
-  margin: 20px 0;
-  border-collapse: collapse;
-  background-color: #fff;
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #fff;
 }
 
 table,
 th,
 td {
-  border: 1px solid #ddd;
+    border: 1px solid #ddd;
 }
 
 th,
 td {
-  padding: 12px;
-  text-align: left;
+    padding: 12px;
+    text-align: left;
 }
 
 th {
-  background-color: #007bff;
-  color: white;
+    color: white;
 }
 
-/* Listor */
 ul {
-  list-style-type: disc;
-  padding-left: 40px;
+    list-style-type: disc;
+    padding-left: 40px;
 }
 
 ul li {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-/* Länk till analyssida */
-h2 + a {
-  display: block;
-  margin-bottom: 20px;
+h2+a {
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+nav {
+  background-color: #333;
   padding: 10px;
-  background-color: #007bff;
-  color: white;
   text-align: center;
-  border-radius: 5px;
-  width: fit-content;
+  width: 100%;
 }
 
-h2 + a:hover {
-  background-color: #0056b3;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+  border-radius: 4px;
 }
